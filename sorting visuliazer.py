@@ -6,7 +6,7 @@ from bubblesort_code import bubble_sort
 root = Tk()
 root.title('DSA PROJECT Sorting Algorithm Visualiser')
 root.geometry("750x600")
-root.config(bg='orange')
+root.config(bg='purple')
 
 select_algorithm = StringVar()
 arr = []
@@ -55,7 +55,7 @@ def sorting():
 
 #GUI CODING PART
 
-options_frame = Frame(root, width= 700, height=300, bg='green')
+options_frame = Frame(root, width= 700, height=300, bg='black')
 options_frame.grid(row=0, column=0, padx=10, pady=10)
 
 canvas = Canvas(root, width=700, height=350, bg='grey')
@@ -82,6 +82,6 @@ highest_Entry.grid(row=1, column=1, padx=5, pady=5)
 arrsize_Entry = Scale(options_frame, from_=3, to=25, resolution=1, orient=HORIZONTAL, label="Array size")
 arrsize_Entry.grid(row=1, column=2, padx=5, pady=5)
 
-Button(options_frame, text="Current Array", command=Generate_array, bg='blue',height=5).grid(row=1, column=3, padx=10, pady=10)
+Button(options_frame, text="DISPLAYY", command=Generate_array, bg='blue',height=5).grid(row=1, column=3, padx=10, pady=10)
 
 root.mainloop()
